@@ -254,17 +254,17 @@ a {
 
 /*about-long*/
 .about-long {
-    padding-top: 50px;
+    padding-top: 40px;
 }
 
 .about-long__inner {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.about__inner__left__image{
-    width: 510px;
-    height: 621px;
+.about__inner__left__image {
+    max-width: 100%;
+    height: auto;
 }
 
 .about__inner__right {
@@ -277,18 +277,85 @@ a {
     margin-top: 35px;
 }
 
+.about__list__item::marker {
+    width: 16px;
+    height: 25px;
+}
+
+.about__list {
+    margin-top: 40px;
+}
+
+.about__list__item {
+    list-style: none;
+    padding-left: 24px;
+    margin-top: 20px;
+}
+
+.about__list__item:nth-child(1) {
+    background: url("../images/Cup.png") no-repeat 0;
+}
+
+.about__list__item:nth-child(2) {
+    background: url("../images/Mouse.png") no-repeat 3px;
+}
+
+.about__list__item:nth-child(3) {
+    background: url("../images/Energy.png") no-repeat 3px;
+}
+
+.about__list__item:nth-child(4) {
+    background: url("../images/Speedometer.png") no-repeat 0;
+}
+
+/*about-short*/
+.about-short {
+    background-color: #f2f2f2;
+    padding: 60px 0px 30px 0px;
+}
+
+.about-short__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-short__inner__left {
+    width: 100%;
+    max-width: 490px;
+}
+
+.about-short__text {
+    margin-top: 30px;
+}
+
+.about-short__inner__right__image {
+    max-width: 100%;
+    height: auto;
+}
+
 @media screen and (max-width:1020px) {
 
     .home__inner__left,
-    .about__inner__right {
+    .about__inner__right,
+    .about-short__inner__left,
+    .about-short__inner__right {
         margin: 0 auto;
+    }
+    .about-short__inner{
+        flex-wrap: wrap;
+
+    }
+
+
+    .about__inner__right {
+        padding-bottom: 60px;
     }
 
     .home__inner__right,
-    .about__inner__left {
+    .about__inner__left
+
+    /*.about-short__inner__right*/
+        {
         display: none;
     }
-
-
-
 }
