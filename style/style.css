@@ -254,7 +254,7 @@ a {
 
 /*about-long*/
 .about-long {
-    padding-top: 40px;
+    padding: 20px 0px;
 }
 
 .about-long__inner {
@@ -311,7 +311,7 @@ a {
 /*about-short*/
 .about-short {
     background-color: #f2f2f2;
-    padding: 60px 0px 30px 0px;
+    padding: 130px 0px 30px 0px;
 }
 
 .about-short__inner {
@@ -333,6 +333,105 @@ a {
     height: auto;
 }
 
+/*testimonials*/
+.testimonials {
+    background: url(../images/testimonials-bg.jpg) center no-repeat;
+    background-size: cover;
+    height: 640px;
+    display: flex;
+    color: #fff;
+    padding: 65px 0px 120px 0px;
+    text-align: center;
+}
+
+.testimonials__title::after {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tetimonials__slider {
+    margin-top: 50px;
+    display: flex;
+    overflow: hidden;
+    height: 320px;
+}
+
+.tetimonials__slider li {
+}
+
+.testimonials__slider__item {
+    display: flex;
+    width: 100%;
+    text-align: left;
+    flex-shrink: 0;
+
+}
+
+.testimonials__slider__item__first,
+.testimonials__slider__item__second {
+    width: 100%;
+    max-width: 570px;
+    font-size: 24px;
+    font-style: italic;
+}
+
+.testimonials__slider__item__first {
+    margin-right: 15px;
+}
+
+.testimonials__slider__item__second,
+.testimonials__slider__item__author__about {
+    margin-left: 15px;
+}
+
+.testimonials__slider__item__review {
+    height: 120px;
+}
+
+.testimonials__slider__item__author {
+    display: flex;
+    align-items: center;
+}
+
+.testimonials__slider__item__author__about__name {
+    font-style: normal;
+    font-size: 16px;
+}
+
+.testimonials__slider__item__author__about__position {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 900;
+}
+
+/* dots */
+.slider-dots {
+    text-align: center;
+}
+
+.slider-dots_item {
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 2px;
+    background-color: transparent;
+    border: 1px gray solid;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.slider-dots_item:hover,
+.active {
+    height: 14px;
+    width: 14px;
+}
+
+.active {
+    background-color: white;
+}
+
+
 @media screen and (max-width:1020px) {
 
     .home__inner__left,
@@ -341,7 +440,8 @@ a {
     .about-short__inner__right {
         margin: 0 auto;
     }
-    .about-short__inner{
+
+    .about-short__inner {
         flex-wrap: wrap;
 
     }
