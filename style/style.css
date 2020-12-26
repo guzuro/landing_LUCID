@@ -93,9 +93,7 @@ a {
 .header {
     padding: 40px 0px 30px 0px;
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+    width: 100%;
 }
 
 .header-inner {
@@ -556,14 +554,122 @@ a {
 }
 
 .pricing__tables__item__purchase {
-    margin: 30px 0px;
+    margin: 10px 0px;
     color: #008ed6;
     background-color: #fff;
 }
 
+/*contact*/
+.contact {
+    padding: 60px 0px;
+    height: 730px;
+    text-align: center;
+    background-color: #ededed
+}
+
+.contact__inner {
+    position: relative;
+}
+
+.contact__title::after {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact__items {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contact__items__item {
+    color: #7d7976;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    max-width: 170px;
+}
+
+.contact__items__item__content {
+    margin-top: 35px;
+}
+
+.contact__form {
+    padding: 60px 70px 0px 70px;
+    background-color: black;
+    width: 100%;
+    max-width: 770px;
+    height: fit-content;
+    margin: 70px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__form__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact__form__left {
+    width: 100%;
+    max-width: 300px;
+}
+
+.contact__form__input {
+    width: 100%;
+    max-width: 300px;
+    height: 50px;
+    border: 1px #7d7976 solid;
+    background-color: transparent;
+    color: #7d7976;
+    padding: 5px;
+    margin-bottom: 18px;
+}
+
+.contact__form__input::placeholder,
+.contact__form__input__textarea::placeholder {
+    color: #7d7976;
+}
+
+.contact__form__input__textarea {
+    resize: none;
+    background-color: transparent;
+    border: 1px #7d7976 solid;
+    color: #7d7976;
+    padding: 5px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.contact__button {
+    margin-bottom: 40px;
+    align-self: flex-end;
+}
+
+/*footer*/
+.footer {
+    padding: 40px 0px;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    color: #7d7976;
+    background-color: #15141a;
+}
+.footer__socials__ico {
+    margin-right: 10px;
+}
+.footer__socials__ico:hover{
+    color: #008ed6;
+}
+.footer__about {
+    margin-top: 30px;
+    font-size: 14px;
+}
+
 
 /*media*/
-
 
 @media screen and (max-width:800px) {
     .testimonials__slider__item {
