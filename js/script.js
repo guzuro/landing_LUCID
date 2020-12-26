@@ -1,4 +1,4 @@
-var slideIndex = 3;
+let slideIndex = 1;
 showSlides(slideIndex);
 
 
@@ -9,11 +9,11 @@ function currentSlide(n) {
 
 /* Основная функция слайдера */
 function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("testimonials__slider__item");
-    var dots = document.getElementsByClassName("slider-dots_item");
+    let i;
+    let slides = document.getElementsByClassName("testimonials__slider__item");
+    let dots = document.getElementsByClassName("slider-dots_item");
     if (n > slides.length) {
-      slideIndex = 3
+        slideIndex = 1
     }
     if (n < 1) {
         slideIndex = slides.length
