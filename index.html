@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="style/style.css">
     <script src="js/script.js"></script>
     <title>Lucid landing</title>
@@ -19,13 +20,20 @@
                 <div class="header__logo">
                     <img src="images/lucid-logo.png" alt="">
                 </div>
-                <nav class="nav">
-                    <a href="#home" class="nav__link">Home</a>
-                    <a href="#features" class="nav__link">Features</a>
-                    <a href="#about" class="nav__link">About</a>
-                    <a href="#testimonials" class="nav__link">Testimonials</a>
-                    <a href="#pricing" class="nav__link">Pricing</a>
-                    <a href="" class="nav__link">Contact</a>
+                <nav class="nav" id="navList">
+                    <ul>
+                        <a href="#home" class="nav__link">Home</a>
+                        <a href="#features" class="nav__link">Features</a>
+                        <a href="#about" class="nav__link">About</a>
+                        <a href="#testimonials" class="nav__link">Testimonials</a>
+                        <a href="#pricing" class="nav__link">Pricing</a>
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </ul>
+                    <div class="burger" id="burger" onclick="showHideBurgerMenu(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
                 </nav>
             </div>
         </div>
@@ -62,9 +70,7 @@
                 <div class="features__title title">List of amazing features</div>
                 <div class="features__list">
                     <div class="features__list__item">
-                        <div class="features__list__item__ico">
-                            <img src="images/Monitor1.png" alt="monitor_icon">
-                        </div>
+                        <i class="features__list__item__ico fas fa-desktop"></i>
                         <div class="features__list__item__title">
                             Responsive
                         </div>
@@ -74,9 +80,7 @@
                         </div>
                     </div>
                     <div class="features__list__item">
-                        <div class="features__list__item__ico">
-                            <img src="images/Settings.png" alt="setting_icon">
-                        </div>
+                        <i class="features__list__item__ico fal fa-cog"></i>
                         <div class="features__list__item__title">
                             Customizable
                         </div>
@@ -86,9 +90,7 @@
                         </div>
                     </div>
                     <div class="features__list__item">
-                        <div class="features__list__item__ico">
-                            <img src="images/Like.png" alt="like_icon">
-                        </div>
+                        <i class="features__list__item__ico far fa-thumbs-up"></i>
                         <div class="features__list__item__title">
                             Lovely design
                         </div>
@@ -98,9 +100,7 @@
                         </div>
                     </div>
                     <div class="features__list__item">
-                        <div class="features__list__item__ico">
-                            <img src="images/Phone.png" alt="phone_icon">
-                        </div>
+                        <i class="features__list__item__ico fas fa-mobile-alt"></i>
                         <div class="features__list__item__title">
                             Lovely design
                         </div>
@@ -469,11 +469,11 @@
         <div class="container">
             <div class="footer__inner">
                 <div class="footer__socials">
-                    <i class="footer__socials__ico fab fa-behance"></i>
-                    <i class="footer__socials__ico fab fa-dribbble"></i>
-                    <i class="footer__socials__ico fab fa-twitter"></i>
-                    <i class="footer__socials__ico fab fa-facebook"></i>
-                    <i class="footer__socials__ico fab fa-linkedin"></i>
+                    <a class="footer__socials__ico" href="https://behance.com"> <i class=" fab fa-behance"></i></a>
+                    <a class="footer__socials__ico" href="https://dribble.com"> <i class=" fab fa-dribbble"></i></a>
+                    <a class="footer__socials__ico" href="https://twitter.com"> <i class=" fab fa-twitter"></i></a>
+                    <a class="footer__socials__ico" href="https://facebook.com"> <i class=" fab fa-facebook"></i></a>
+                    <a class="footer__socials__ico" href="https://ru.linkedin.com"> <i class=" fab fa-linkedin"></i></a>
                 </div>
                 <p class="footer__about">copyright © 2014 lucid onepage theme</p>
             </div>

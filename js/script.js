@@ -27,3 +27,11 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "flex";
     dots[slideIndex - 1].className += " active";
 }
+
+
+
+function showHideBurgerMenu(bars) {
+    bars.classList.toggle("change");
+    document.querySelector('#navList > ul').classList.toggle("active");
+
+}
