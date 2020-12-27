@@ -1,16 +1,33 @@
+window.onscroll = function () {
+    activateStickyNav();
+};
+
+let navbar;
+let slides;
 let slideIndex = 1;
-showSlides(slideIndex);
 
 
-/* Устанавливает текущий слайд */
+$(document).ready(function () {
+    navbar = document.getElementById("header");
+    activateStickyNav();
+    slides = document.getElementsByClassName("slider__item");
+    showSlides(slideIndex);
+});
+
+function activateStickyNav() {
+    if (window.pageYOffset >= 50) {
+        navbar.classList.add("sticky");
+    } else {
+        navbar.classList.remove("sticky");
+    }
+}
+
 function currentSlide(n) {
     showSlides(slideIndex = n);
 }
 
-/* Основная функция слайдера */
 function showSlides(n) {
     let i;
-    let slides = document.getElementsByClassName("slider__item");
     let dots = document.getElementsByClassName("slider-dots_item");
     if (n > slides.length) {
         slideIndex = 1
@@ -27,8 +44,6 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "flex";
     dots[slideIndex - 1].className += " active";
 }
-
-
 
 function showHideBurgerMenu(bars) {
     bars.classList.toggle("change");
