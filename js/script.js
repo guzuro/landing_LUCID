@@ -10,7 +10,7 @@ function currentSlide(n) {
 /* Основная функция слайдера */
 function showSlides(n) {
     let i;
-    let slides = document.getElementsByClassName("testimonials__slider__item");
+    let slides = document.getElementsByClassName("slider__item");
     let dots = document.getElementsByClassName("slider-dots_item");
     if (n > slides.length) {
         slideIndex = 1
@@ -33,5 +33,4 @@ function showSlides(n) {
 function showHideBurgerMenu(bars) {
     bars.classList.toggle("change");
     document.querySelector('#navList > ul').classList.toggle("active");
-
 }
